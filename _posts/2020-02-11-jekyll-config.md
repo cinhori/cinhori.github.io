@@ -67,7 +67,7 @@ If you’re using a `Gemfile` you would first run `bundle install` to install th
 ## 本地运行
 >1. start command prompt with ruby
 >2. cd到博客本地路径下
->3. 执行`gem install`安装依赖
+>3. 执行`bundle install`安装依赖
 >4. 编译：`jekyll b`
 >5. 运行server：`jekyll s`
 >6. 访问http://localhost:4000 （默认端口4000）
