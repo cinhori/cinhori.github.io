@@ -69,7 +69,7 @@
     <script type="text/javascript" src="https://basis-learning.github.io/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
 
-    {% if site.google.analytics_id %}
+<!--    {% if site.google.analytics_id %}
     <div style="display:none">
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -81,6 +81,20 @@
         ga('send', 'pageview');
 
       </script>
+    </div>
+    {% endif %}-->
+
+    {% if site.baidu.analytics_id %}
+    <div style="display:none">
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?77b1fcec32826c1e4aef8f5d80abbf9c";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
     </div>
     {% endif %}
 </body>
