@@ -2,7 +2,7 @@
 layout: wiki
 title: Markdown
 categories: Markdown
-description: Markdown 常用语法示例。
+description: Markdown tutorial
 keywords: Markdown
 mermaid: true
 sequence: true
@@ -10,129 +10,112 @@ flow: true
 mathjax: true
 ---
 
-**目录**
+### 1. 斜体和粗体
 
-* TOC
-{:toc}
+使用 * 和 ** 表示斜体和粗体。
 
-### 超链接
+示例：
 
-```
-[靠谱-ing](https://mazhuang.org)
+这是 *斜体*，这是 **粗体**。
 
-<https://mazhuang.org>
-```
+### 2. 分级标题
 
-[靠谱-ing](https://mazhuang.org)  
+在行首加井号表示不同级别的标题 (H1-H6)，例如：# H1, ## H2, ### H3，#### H4。
 
-<https://mazhuang.org>
+### 3. 外链接
 
-### 列表
+使用 \[描述](链接地址) 为文字增加外链接。
 
-```
-1. 有序列表项 1
+示例：
 
-2. 有序列表项 2
+这是去往 [本人博客](https://cinhori.github.io/) 的链接。
 
-3. 有序列表项 3
-```
+### 4. 无序列表
 
-1. 有序列表项 1
+使用 *，+，- 表示无序列表。
 
-2. 有序列表项 2
+示例：
 
-3. 有序列表项 3
+- 无序列表项 一
+- 无序列表项 二
+- 无序列表项 三
 
-```
-* 无序列表项 1
+### 5. 有序列表
 
-* 无序列表项 2
+使用数字和点表示有序列表。
 
-* 无序列表项 3
-```
+示例：
 
-* 无序列表项 1
+1. 有序列表项 一
+2. 有序列表项 二
+3. 有序列表项 三
 
-* 无序列表项 2
+### 6. 文字引用
 
-* 无序列表项 3
+使用 > 表示文字引用。
 
-```
-- [x] 任务列表 1
-- [ ] 任务列表 2
-```
+示例：
 
-- [x] 任务列表 1
-- [ ] 任务列表 2
+> 野火烧不尽，春风吹又生。
 
-### 强调
+### 7. 行内代码块
 
-```
-~~删除线~~
+使用 \`代码` 表示行内代码块。
 
-**加黑**
+### 8.  代码块
 
-*斜体*
-```
+使用 四个缩进空格 或\`\`\`代码块\`\`\`表示代码块。
 
-~~删除线~~
+示例：
 
-**加黑**
+    这是一个代码块，此行左侧有四个不可见的空格。
 
-*斜体*
+### 9.  插入图像
 
-### 标题
+使用 \!\[描述](图片链接地址) 插入图像。
 
-```
-# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题
-```
+### 10. 删除线
 
-Tips: `#` 与标题中间要加空格。
+使用 ~~ 表示删除线。
 
-### 表格
+~~这是一段错误的文本。~~
+
+### 11. 加强的代码块
+
+支持编程语言的语法高亮的显示，行号显示。
+
+非代码示例：
 
 ```
-| HEADER1 | HEADER2 | HEADER3 | HEADER4 |
-| ------- | :------ | :-----: | ------: |
-| content | content | content | content |
+$ sudo apt-get install vim-gnome
 ```
 
-| HEADER1 | HEADER2 | HEADER3 | HEADER4 |
-| ------- | :------ | :-----: | ------: |
-| content | content | content | content |
-
-1. :----- 表示左对齐
-2. :----: 表示中对齐
-3. -----: 表示右对齐
-
-### 代码块
+Python 示例：
 
 ```python
-print 'Hello, World!'
+@requires_authorization
+def somefunc(param1='', param2=0):
+    '''A docstring'''
+    if param1 > param2: # interesting
+        print 'Greater'
+    return (param2 - param1 + 1) or None
+
+class SomeClass:
+    pass
+
+>>> message = '''interpreter
+... prompt'''
 ```
 
-1. list item1
+### 12. 表格支持
 
-2. list item2
+| 项目        | 价格   |  数量  |
+| --------   | -----:  | :----:  |
+| 计算机     | \$1600 |   5     |
+| 手机        |   \$12   |   12   |
+| 管线        |    \$1    |  234  |
 
-   ```python
-   print 'hello'
-   ```
-
-### 图片
-
-```
-![本站favicon](/favicon.ico)
-```
-
-![本站favicon](/favicon.ico)
-
-### 锚点
+### 13. 锚点
 
 ```
 * [目录](#目录)
@@ -140,17 +123,17 @@ print 'Hello, World!'
 
 * [目录](#目录)
 
-### Emoji
+### 14. Emoji
 
 :camel:
 :blush:
 :smile:
 
-### Footnotes
+### 15. Footnotes
 
 This is a text with footnote[^1].
 
-### mermaid
+### 16. mermaid
 
 <div class="mermaid">
 sequenceDiagram
@@ -158,7 +141,7 @@ sequenceDiagram
     John-->>Alice: Great!
 </div>
 
-### sequence
+### 17. sequence
 
 ```sequence
 Andrew->China: Says Hello
@@ -167,7 +150,7 @@ China-->Andrew: How are you?
 Andrew->>China: I am good thanks!
 ```
 
-### flowchart
+### 18. flowchart
 
 ```flow
 st=>start: Start
@@ -183,10 +166,11 @@ cond(yes)->io->e
 cond(no)->sub1(right)->op1
 ```
 
-### mathjax
+### 19. mathjax
 
 When $$(a \ne 0)$$, there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 [^1]: Here is the footnote 1 definition.
+

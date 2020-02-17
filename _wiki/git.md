@@ -6,6 +6,8 @@ description: Git 常用操作记录。
 keywords: Git, 版本控制
 ---
 
+**来源**：[mzlogin](https://mazhuang.org/2015/05/06/android-studio/)
+
 ## 常用命令
 
 | 功能                      | 命令                                  |

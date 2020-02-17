@@ -6,6 +6,8 @@ description: MySQL Wiki
 keywords: MySQL
 ---
 
+**来源**：[mzlogin](https://mazhuang.org/2015/05/06/android-studio/)
+
 ## 使用
 
 ### 启动与停止

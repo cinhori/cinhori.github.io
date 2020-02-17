@@ -6,6 +6,8 @@ description: 个人最常用的 Vim 常用操作。
 keywords: Vim
 ---
 
+**来源**：[mzlogin](https://mazhuang.org/2015/05/06/android-studio/)
+
 ### 移动
 
 **以字（符）为单位**
